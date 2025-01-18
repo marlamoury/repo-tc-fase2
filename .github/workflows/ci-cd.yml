@@ -1,5 +1,17 @@
-name: Fluxo padrão
-on: [push]
+# Define o nome do Workflow
+name: Fluxo Padrão
+
+# Define quando o Workflow será disparado
+on:
+  push:
+    branches: [ "main","tst","dev" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Habilita rodar manualmente
+  workflow_dispatch:
+
+# Define os jobs que o Workflow executará
 jobs:
   test_job:
     name: executando teste de job
