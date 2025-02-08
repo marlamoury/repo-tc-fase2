@@ -1,5 +1,5 @@
 # Define o nome do Workflow
-name: Fluxo Padrão
+name: CI
 
 # Define quando o Workflow será disparado
 on:
